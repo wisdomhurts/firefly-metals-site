@@ -13,7 +13,7 @@
   <!-- ============================================
        Navigation
        ============================================ -->
-  <nav class="nav">
+  <nav class="nav nav--transparent">
     <a href="index.html">
       <img src="https://fireflymetals.com.au/wp-content/uploads/2021/01/FireFly-Logo-FINAL.png" alt="FireFly Metals" class="nav__logo">
     </a>
@@ -23,7 +23,18 @@
       <a href="investors.html">Investors</a>
       <a href="contact.html">Contact</a>
     </div>
+    <button class="nav__hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile">
+    <a href="green-bay.html">Projects</a>
+    <a href="corporate.html">Corporate</a>
+    <a href="investors.html">Investors</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
   <!-- ============================================
        Hero
@@ -46,11 +57,9 @@
           <stop offset="100%" stop-color="#F5C22A" stop-opacity="0"/>
         </radialGradient>
       </defs>
-      <!-- Organic blob shapes -->
       <ellipse cx="1020" cy="200" rx="320" ry="260" fill="url(#g1)"/>
       <ellipse cx="1200" cy="440" rx="240" ry="200" fill="url(#g2)"/>
       <ellipse cx="860" cy="520" rx="200" ry="160" fill="url(#g3)"/>
-      <!-- Rim stroke accents -->
       <path d="M 900 80 Q 1100 60 1280 180 Q 1380 260 1340 400" fill="none" stroke="#F5C22A" stroke-opacity="0.08" stroke-width="1"/>
       <path d="M 780 500 Q 960 420 1160 480 Q 1300 520 1380 600" fill="none" stroke="#b8860b" stroke-opacity="0.06" stroke-width="1"/>
     </svg>
@@ -65,7 +74,7 @@
       </h1>
     </div>
 
-    <div class="hero__right">
+    <div class="hero__right reveal">
       <p class="hero__coord">48.0&deg; N &middot; 56.3&deg; W &middot; Green Bay, Newfoundland</p>
 
       <div class="hero__stat-row">
@@ -104,23 +113,30 @@
     <div class="marquee-strip__fade-left"></div>
     <div class="marquee-strip__fade-right"></div>
     <div class="marquee-strip__track">
-      <!-- First set -->
       <span class="marquee-strip__item--display">Copper</span>
+      <span class="marquee-strip__dot"></span>
       <span class="marquee-strip__item--label">ASX &middot; TSX &middot; FFM</span>
       <span class="marquee-strip__item--display">Gold</span>
+      <span class="marquee-strip__dot"></span>
       <span class="marquee-strip__item--label">Newfoundland</span>
       <span class="marquee-strip__item--display">50.4 Mt Resource</span>
+      <span class="marquee-strip__dot"></span>
       <span class="marquee-strip__item--label">Top Tier Jurisdiction</span>
       <span class="marquee-strip__item--display">2.0% Grade</span>
+      <span class="marquee-strip__dot"></span>
       <span class="marquee-strip__item--label">Green Bay &middot; Pickle Crow</span>
       <!-- Duplicate for seamless loop -->
       <span class="marquee-strip__item--display">Copper</span>
+      <span class="marquee-strip__dot"></span>
       <span class="marquee-strip__item--label">ASX &middot; TSX &middot; FFM</span>
       <span class="marquee-strip__item--display">Gold</span>
+      <span class="marquee-strip__dot"></span>
       <span class="marquee-strip__item--label">Newfoundland</span>
       <span class="marquee-strip__item--display">50.4 Mt Resource</span>
+      <span class="marquee-strip__dot"></span>
       <span class="marquee-strip__item--label">Top Tier Jurisdiction</span>
       <span class="marquee-strip__item--display">2.0% Grade</span>
+      <span class="marquee-strip__dot"></span>
       <span class="marquee-strip__item--label">Green Bay &middot; Pickle Crow</span>
     </div>
   </div>
@@ -128,7 +144,7 @@
   <!-- ============================================
        Projects Section
        ============================================ -->
-  <section class="projects">
+  <section class="projects reveal">
 
     <div class="projects__header">
       <div>
@@ -141,7 +157,7 @@
     <div class="projects__grid">
 
       <!-- Green Bay — Large Card -->
-      <div class="project-card--large">
+      <a href="green-bay.html" class="project-card--large">
         <img src="https://fireflymetals.com.au/wp-content/uploads/2025/11/2025.FireflyMetals-P084-2048x1365.jpg" alt="Green Bay copper-gold project site" class="project-card__photo">
         <div class="project-card__overlay"></div>
 
@@ -169,13 +185,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </a>
 
       <!-- Right Column — Small Cards -->
       <div class="project-card--small">
 
         <!-- Pickle Crow -->
-        <div class="project-card--mini pickle-crow">
+        <a href="pickle-crow.html" class="project-card--mini pickle-crow">
           <img src="https://fireflymetals.com.au/wp-content/uploads/2025/11/2025.FireflyMetals-P030-2048x1365.jpg" alt="Pickle Crow gold project" class="project-card__photo" style="opacity:0.35">
           <div class="project-card__overlay"></div>
           <div class="project-card__content">
@@ -193,7 +209,7 @@
             </div>
           </div>
           <span class="project-card__au">Au</span>
-        </div>
+        </a>
 
         <!-- Limestone Well -->
         <div class="project-card--mini limestone">
@@ -211,7 +227,7 @@
   <!-- ============================================
        Fraser Band
        ============================================ -->
-  <section class="fraser">
+  <section class="fraser reveal">
     <span class="fraser__number">#6</span>
     <div class="fraser__text">
       <p class="fraser__headline">Newfoundland &amp; Labrador &mdash; a top-tier global mining jurisdiction</p>
@@ -227,7 +243,7 @@
   <!-- ============================================
        Latest News
        ============================================ -->
-  <section class="news">
+  <section class="news reveal">
 
     <div class="news__header">
       <div>
@@ -263,7 +279,7 @@
 
     <span class="footer__watermark">FireFly Metals</span>
 
-    <div class="footer__cta">
+    <div class="footer__cta reveal">
       <h2 class="footer__headline">Discover the Future<br>of Copper &amp; Gold</h2>
       <p class="footer__sub">Explore our world-class assets across three premier mining jurisdictions. From the copper-gold riches of Green Bay to the high-grade gold at Pickle Crow, FireFly Metals is building a portfolio of exceptional mineral resources.</p>
       <a href="investors.html" class="btn-amber"><span>Investor Centre &rarr;</span></a>
@@ -288,5 +304,6 @@
 
   </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>

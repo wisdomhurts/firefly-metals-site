@@ -11,17 +11,27 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="nav">
+  <nav class="nav nav--transparent">
     <a href="index.html">
       <img src="https://fireflymetals.com.au/wp-content/uploads/2021/01/FireFly-Logo-FINAL.png" alt="FireFly Metals" class="nav__logo">
     </a>
     <div class="nav__links">
       <a href="green-bay.html">Projects</a>
-      <a href="corporate.html" style="color: var(--text-primary);">Corporate</a>
+      <a href="corporate.html" class="is-active">Corporate</a>
       <a href="investors.html">Investors</a>
       <a href="contact.html">Contact</a>
     </div>
+    <button class="nav__hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+  <div class="nav__mobile">
+    <a href="index.html">Home</a>
+    <a href="green-bay.html">Projects</a>
+    <a href="corporate.html">Corporate</a>
+    <a href="investors.html">Investors</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
   <!-- Page Header -->
   <header class="page-header">
@@ -41,9 +51,7 @@
   </header>
 
   <!-- Content Grid -->
-  <section class="content-grid">
-
-    <!-- Left Column -->
+  <section class="content-grid reveal">
     <div style="flex: 1; display: flex; flex-direction: column; gap: 24px;">
       <div class="content-card">
         <h2 class="content-card__title">Company Overview</h2>
@@ -54,8 +62,6 @@
         <p class="content-card__text">FireFly Metals is focused on resource growth through aggressive and systematic drilling campaigns, conversion of inferred resources to measured and indicated categories, and establishing a near-term development pathway. The Company's strategy leverages its position in tier-one mining jurisdictions with established infrastructure and strong government support for responsible resource development.</p>
       </div>
     </div>
-
-    <!-- Right Column -->
     <div style="flex: 1; display: flex; flex-direction: column; gap: 24px;">
       <div class="content-card">
         <h2 class="content-card__title">Corporate Links</h2>
@@ -87,7 +93,6 @@
         <p class="content-card__text">Watch our 2025 investor presentation for a comprehensive overview of FireFly Metals' projects, strategy, and growth outlook. Hear directly from management on the Company's vision for building a leading copper-gold company.</p>
       </div>
     </div>
-
   </section>
 
   <!-- Photo Strip -->
@@ -115,10 +120,10 @@
     </div>
   </section>
 
-  <!-- Footer — Compact -->
+  <!-- Footer -->
   <footer class="footer" style="padding-top: 48px;">
     <span class="footer__watermark">FireFly Metals</span>
-    <div class="footer__cta">
+    <div class="footer__cta reveal">
       <h2 class="footer__headline">Explore Our World-Class Assets</h2>
       <a href="green-bay.html" class="btn-amber"><span>View Projects &rarr;</span></a>
     </div>
@@ -140,5 +145,6 @@
     </div>
   </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>

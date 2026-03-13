@@ -10,26 +10,31 @@
 </head>
 <body>
 
-  <!-- ============================================
-       Navigation
-       ============================================ -->
-  <nav class="nav">
+  <!-- Navigation -->
+  <nav class="nav nav--transparent">
     <a href="index.html">
       <img src="https://fireflymetals.com.au/wp-content/uploads/2021/01/FireFly-Logo-FINAL.png" alt="FireFly Metals" class="nav__logo">
     </a>
     <div class="nav__links">
-      <a href="index.html">Home</a>
+      <a href="green-bay.html" class="is-active">Projects</a>
       <a href="corporate.html">Corporate</a>
       <a href="investors.html">Investors</a>
       <a href="contact.html">Contact</a>
     </div>
+    <button class="nav__hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+  <div class="nav__mobile">
+    <a href="index.html">Home</a>
+    <a href="green-bay.html">Projects</a>
+    <a href="corporate.html">Corporate</a>
+    <a href="investors.html">Investors</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-  <!-- ============================================
-       Page Header
-       ============================================ -->
+  <!-- Page Header -->
   <header class="page-header">
-
     <svg class="page-header__glass" viewBox="0 0 600 400" preserveAspectRatio="xMaxYMid slice" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <radialGradient id="ph1" cx="50%" cy="40%" r="50%">
@@ -53,34 +58,28 @@
     <div class="page-header__rule"></div>
   </header>
 
-  <!-- ============================================
-       Stats Row
-       ============================================ -->
-  <section class="stats-row">
-    <div class="stat-card">
+  <!-- Stats Row -->
+  <section class="stats-row reveal-stagger">
+    <div class="stat-card reveal-child">
       <div class="stat-card__value">2.8 Moz</div>
       <div class="stat-card__label">Gold Resource</div>
     </div>
-    <div class="stat-card">
+    <div class="stat-card reveal-child">
       <div class="stat-card__value">7.2 g/t</div>
       <div class="stat-card__label">Gold Grade &mdash; World class</div>
     </div>
-    <div class="stat-card">
+    <div class="stat-card reveal-child">
       <div class="stat-card__value">11.9 Mt</div>
       <div class="stat-card__label">Total resource tonnage</div>
     </div>
-    <div class="stat-card">
+    <div class="stat-card reveal-child">
       <div class="stat-card__value">70%</div>
       <div class="stat-card__label">Ownership interest</div>
     </div>
   </section>
 
-  <!-- ============================================
-       Content Grid
-       ============================================ -->
-  <section class="content-grid">
-
-    <!-- Left Column -->
+  <!-- Content Grid -->
+  <section class="content-grid reveal">
     <div style="flex: 1; display: flex; flex-direction: column; gap: 16px;">
       <div class="content-card">
         <h3 class="content-card__title">Historic Mine</h3>
@@ -91,8 +90,6 @@
         <p class="content-card__text">Significant exploration potential remains across the broader Pickle Crow property, with multiple high-grade vein systems extending beyond the historic mine workings. Recent drilling has intersected new zones of gold mineralisation at depth and along strike, demonstrating that the known resource represents only a fraction of the total gold endowment. The project offers exceptional resource growth potential through systematic modern exploration techniques.</p>
       </div>
     </div>
-
-    <!-- Right Column -->
     <div style="flex: 1; display: flex; flex-direction: column; gap: 16px;">
       <div class="content-card content-card--accent">
         <h3 class="content-card__title">Why Pickle Crow?</h3>
@@ -100,12 +97,9 @@
         <p class="content-card__text" style="margin-top: 12px;">Located in Ontario, Canada &mdash; the world's #1 ranked mining jurisdiction by the Fraser Institute for investment attractiveness &mdash; Pickle Crow benefits from established infrastructure, a supportive permitting environment, and proximity to experienced mining communities. Ontario's track record of responsible resource development provides a stable foundation for advancing this world-class asset.</p>
       </div>
     </div>
-
   </section>
 
-  <!-- ============================================
-       Photo Strip
-       ============================================ -->
+  <!-- Photo Strip -->
   <section class="photo-strip">
     <div class="photo-strip__item">
       <img src="https://fireflymetals.com.au/wp-content/uploads/2025/11/2025.FireflyMetals-P119-scaled-e1763434677535-2048x1192.jpg" alt="Field Operations">
@@ -130,18 +124,13 @@
     </div>
   </section>
 
-  <!-- ============================================
-       Footer
-       ============================================ -->
+  <!-- Footer -->
   <footer class="footer">
-
     <span class="footer__watermark">Pickle Crow</span>
-
-    <div class="footer__cta">
+    <div class="footer__cta reveal">
       <h2 class="footer__headline">Explore Our World-Class Assets &rarr;</h2>
       <p class="footer__sub">Green Bay &middot; Pickle Crow &middot; Limestone Well</p>
     </div>
-
     <div class="footer__bar">
       <span class="footer__copyright">&copy; 2025 FireFly Metals Ltd. All rights reserved.</span>
       <nav class="footer__nav">
@@ -158,8 +147,8 @@
         <span class="footer__ticker-value">C$1.67</span>
       </div>
     </div>
-
   </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>

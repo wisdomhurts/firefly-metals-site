@@ -11,17 +11,27 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="nav">
+  <nav class="nav nav--transparent">
     <a href="index.html">
       <img src="https://fireflymetals.com.au/wp-content/uploads/2021/01/FireFly-Logo-FINAL.png" alt="FireFly Metals" class="nav__logo">
     </a>
     <div class="nav__links">
       <a href="green-bay.html">Projects</a>
       <a href="corporate.html">Corporate</a>
-      <a href="investors.html" style="color: var(--text-primary);">Investors</a>
+      <a href="investors.html" class="is-active">Investors</a>
       <a href="contact.html">Contact</a>
     </div>
+    <button class="nav__hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+  <div class="nav__mobile">
+    <a href="index.html">Home</a>
+    <a href="green-bay.html">Projects</a>
+    <a href="corporate.html">Corporate</a>
+    <a href="investors.html">Investors</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
   <!-- Page Header with Share Price -->
   <header class="page-header" style="flex-direction: row; align-items: flex-end; justify-content: space-between; gap: 40px;">
@@ -48,7 +58,7 @@
   </header>
 
   <!-- Investor Layout -->
-  <section class="investor-layout">
+  <section class="investor-layout reveal">
 
     <!-- Left — Announcements -->
     <div class="announcements">
@@ -130,7 +140,7 @@
   <!-- Footer — Subscribe Variant -->
   <footer class="footer">
     <span class="footer__watermark">FireFly Metals</span>
-    <div class="footer__cta">
+    <div class="footer__cta reveal">
       <h2 class="footer__headline">Stay Informed &mdash;<br>Subscribe to Updates</h2>
       <p class="footer__sub">Latest announcements, drilling results, and corporate updates delivered directly.</p>
       <a href="#" class="btn-amber"><span>Subscribe &rarr;</span></a>
@@ -153,5 +163,6 @@
     </div>
   </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>
