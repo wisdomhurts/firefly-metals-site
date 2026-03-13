@@ -29,20 +29,18 @@
 
   // ── Nav Scroll Behavior ──
   const nav = document.querySelector('.nav');
-  const hero = document.querySelector('.hero');
   const pageHeader = document.querySelector('.page-header');
-  const scrollTarget = hero || pageHeader;
 
   function updateNav() {
     if (!nav) return;
     const scrolled = window.scrollY > 20;
     nav.classList.toggle('nav--scrolled', scrolled);
 
-    // Transparent nav on hero/header pages
-    if (scrollTarget) {
-      const pastHero = window.scrollY > (scrollTarget.offsetHeight - 68);
-      nav.classList.toggle('nav--solid', pastHero);
-      nav.classList.toggle('nav--transparent', !pastHero);
+    // Transparent nav only on sub-pages with dark page-header
+    if (pageHeader) {
+      const pastHeader = window.scrollY > (pageHeader.offsetHeight - 68);
+      nav.classList.toggle('nav--solid', pastHeader);
+      nav.classList.toggle('nav--transparent', !pastHeader);
     }
   }
 
